@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Perfil GitHub</title>
+</head>
+<body>
+    <div class="container">
+        <article >
+            <img
+                style="border: 5px solid <%= usuario.cor %>"
+                src= "<%= usuario.avatar_url %>"
+                alt="imagem do usuario"
+            />
+            <h1> <%= usuario.name %> </h1>
+            <p> <% usuario.bio %> </p>
+        </article>
+    </div>
+</body>
+</html>
